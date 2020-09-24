@@ -55,8 +55,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
     public void onAuthenticationSucceeded(FingerprintManager.AuthenticationResult result) {
 
         this.update("You can now access the app", true );
-        TextView textView = ((Activity)context).findViewById(R.id.tv_Erfolgstext);
-        textView.setVisibility(View.VISIBLE);
+
     }
 
     private void update(String s, boolean b){

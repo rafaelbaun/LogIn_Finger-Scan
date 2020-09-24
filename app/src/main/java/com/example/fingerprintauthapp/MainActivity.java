@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView mHeadingLAbel,mParaLabel,mErfolgsText;
+    private TextView mHeadingLAbel,mParaLabel;
     private ImageView mFingerprintImage;
     private FingerprintManager fingerprintManager;
     private KeyguardManager keyguardManager;
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         mHeadingLAbel = findViewById(R.id.headingLabel);
         mParaLabel = findViewById(R.id.paraLabel);
         mFingerprintImage = findViewById(R.id.fingerprintImage);
-        mErfolgsText = findViewById(R.id.tv_Erfolgstext);
 
-        mErfolgsText.setVisibility(View.INVISIBLE);
+
+
 
         //     check Android version
         //     check Device has Scanner
